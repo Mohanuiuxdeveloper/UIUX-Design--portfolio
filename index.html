@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan - UX/UI Designer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Your CSS (same folder as this HTML) -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Your JS -->
+    <script src="index.js" defer></script>
+
+    <!-- Font Awesome (icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <canvas id="star-canvas"></canvas>
+ <section>
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <span>Mohan</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Portfolio</a></li>
+                
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-extra" style="display:none"></div>
+    </header>
+   </section>
+
+    <section class="hero">
+        <div class="profile-container">
+            <!-- make sure m.jpg.png is in the same folder as this HTML -->
+            <img src="./m.jpg.png" alt="Mohan Profile" class="profile-img">
+            <!-- OR change your CSS selector to .profile-image if you prefer that class -->
+        </div>
+
+        <h1>
+            Hi, I am <span class="highlight-wrapper">Mohan</span>
+        </h1>
+
+        <p class="subtitle">
+            I am a UX/UI designer. I can provide clean design and pixel perfect layouts.
+            I also make interfaces more &amp; more interactive with smart animations.
+        </p>
+
+        <div class="social-links">
+            <a href="#" class="social-btn"><i class="fas fa-basketball-ball"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-behance"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
+
+    <section class="about-section" id="About">
+
+    <!-- Section Title -->
+    <div class="section-header">
+        <span class="sub-title">About Me</span>
+        <h1 class="main-title">
+            Crafting My Identity <BR>Through Design
+        </h1>
+    </div>
+
+    <div class="content-grid">
+
+        <!-- LEFT: Profile Image -->
+        <div class="image-wrapper">
+
+            <div class="arch-border">
+                <div class="arch-dot"></div>
+            </div>
+
+            <img 
+                src="./m.jpg (2).png" 
+                alt="Kalyan Profile" 
+                class="profile-img"
+            >
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+        </div>
+
+        <!-- RIGHT: Text + Stats -->
+        <div class="text-content">
+
+            <p class="description">
+               I'm <span>Midathana Mohan</span>, a passionate UX/UI Designer focused on creating clean, modern, and user-friendly digital experiences.
+                As a <span>fresher</span>, I’ve built multiple practice projects that showcase my skills in wireframing, visual design, prototyping, and responsive layouts.
+               I enjoy transforming ideas into intuitive interfaces, improving usability, and crafting designs that feel smooth, meaningful, and easy to use.
+               I'm always learning, exploring new tools, and refining my design approach to create impactful user experiences.
+            </p>
+
+            <!-- Stats Section -->
+            <div class="stats-row" id="stats-container">
+
+                <div class="stat-item">
+                    <h2 class="counter" data-target="4">0+</h2>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="stat-item">
+                    <h2 class="counter" data-target="34">3+</h2>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="stat-item">
+                    <h2 class="counter" data-target="40">1+</h2>
+                    <p>Satisfied Clients</p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Contact Info -->
+            <div class="contact-footer">
+                <div class="contact-item">
+                    Email: <span>mmuiuxdeveloper@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    Phone: <span>+91 772994869</span>
+                </div>
+               
+                <div class="contact-item">
+                    Location: <span>Visakhapatnam,</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- <------- Service-------/> -->
+ <section class="service-section" id="Services">
+  <div class="section-header">
+        <span class="sub-title">Services</span>
+        <h1 class="main-title">
+           Transforming Your Requirements <br>Into Smart, Simple Design
+        </h1>
+    </div>
+
+    <div class="services-grid">
+
+            <div class="service-card">
+                <div class="icon-box">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3 class="card-title">UI/<span class="ux-highlight">UX</span> Design</h3>
+                <p class="card-desc">
+                    Design responsive, user-friendly interfaces using Figma to enhance usability and visual consistency.
+                </p>
+            </div>
+
+            <div class="service-card" style="transition-delay: 100ms;">
+                <div class="icon-box">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                </div>
+                <h3 class="card-title">User Research</h3>
+                <p class="card-desc">
+                    Identify user needs through interviews and surveys. Tools used: Maze, Google Forms, Miro.
+                </p>
+            </div>
+
+            <div class="service-card" style="transition-delay: 200ms;">
+                <div class="icon-box">
+                    <i class="fa-solid fa-border-all"></i>
+                </div>
+                <h3 class="card-title">Wireframing</h3>
+                <p class="card-desc">
+                    Create low to high-fidelity wireframes and prototypes in Figma to visualize and test ideas.
+                </p>
+            </div>
+
+            <div class="service-card" style="transition-delay: 300ms;">
+                <div class="icon-box">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="card-title">Usability Testing</h3>
+                <p class="card-desc">
+                    Conduct user testing to gather feedback and improve design for better usability and satisfaction.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+ <section class="resume-section" id="Resume">
+        
+        <header class="resume-header">
+            <div class="header-content">
+                <span class="section-tag">Resume</span>
+                <h1 class="main-title">Academic knowledge and<br>hands-on expertise</h1>
+            </div>
+            <a href="./Mohan..uiux developer.pdf" class="resume-btn" download>Download Resume</a>
+        </header>
+        <div class="resume-timeline">
+
+           <section class="edu-exp-section">
+
+    <div class="edu-exp-grid">
+
+        <!-- Left Side (Education) -->
+        <div class="edu-box">
+            <h2 class="section-heading">Education</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <p class="year">2017 – 2022</p>
+                    <h3>B.SC Computer Science </h3>
+                    <p class="sub-text">Dr.lankapalli bullayya college, Visakhapatnam</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <p class="year">2014 – 2016</p>
+                    <h3>Intermediate (MPC Stream)</h3>
+                    <p class="sub-text">Board of Intermediate Education, AP</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <p class="year">2013 – 2014</p>
+                    <h3>Secondary School Certificate</h3>
+                    <p class="sub-text">Board of Secondary Education, AP</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Side (Experience) -->
+        <div class="edu-box">
+            <h2 class="section-heading">Experience</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <p class="year">April 2025 – Present</p>
+                    <h3>Trainee-UI/UX Designer</h3>
+                    <p class="sub-text">Tech Mahindra Smart Academy, Visakhapatnam</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <p class="year">Jun 2023 – Feb 2025</p>
+                    <h3>US IT Recruiter & Bench Sales Associate- Team Lead</h3>
+                    <p class="sub-text">3S Business Corporation, Visakhapatnam</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="dot"></span>
+                    <p class="year">Oct 2021 –Mar 2023</p>
+                    <h3>Assistant Manager</h3>
+                    <p class="sub-text">Khazana Jewellery, Visakhapatnam</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    </section>
+
+
+    <section class="tools-section">
+  <div class="tools-grid">
+
+    <!-- Figma -->
+    <div class="tool-card">
+      <div class="tool-arch">
+        <img src="./figma.png" alt="Figma" class="tool-icon">
+        <div class="tool-percent">95%</div>
+      </div>
+      <p class="tool-name">Figma</p>
+    </div>
+
+    <!-- Photoshop -->
+    <div class="tool-card">
+      <div class="tool-arch">
+        <img src="./ps.png" alt="Photoshop" class="tool-icon">
+        <div class="tool-percent">95%</div>
+      </div>
+      <p class="tool-name">Photoshop</p>
+    </div>
+
+    <!-- Illustrator -->
+    <div class="tool-card">
+      <div class="tool-arch">
+        <img src="./ai.png" alt="Illustrator" class="tool-icon">
+        <div class="tool-percent">75%</div>
+      </div>
+      <p class="tool-name">Illustrator</p>
+    </div>
+
+    <!-- Canva -->
+    <div class="tool-card">
+      <div class="tool-arch">
+        <img src="./canva.png" alt="Canva" class="tool-icon">
+        <div class="tool-percent">95%</div>
+      </div>
+      <p class="tool-name">Canva</p>
+    </div>
+
+    <!-- Adobe XD -->
+    <div class="tool-card">
+      <div class="tool-arch">
+        <img src="./xd.png" alt="Adobe XD" class="tool-icon">
+        <div class="tool-percent">80%</div>
+      </div>
+      <p class="tool-name">Adobe XD</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="projects-section" id="projects">
+    <div class="projects-header">
+        <span class="projects-tag">Portfolio</span>
+        <h2 class="projects-title">Latest projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Row 1 -->
+        <a href="https://www.figma.com/proto/caU7k7UcM4e8b6m4Xd0Ok0/Untitled?page-id=0%3A1&node-id=1-135&viewport=195%2C120%2C0.24&t=sOE4OJzqwsTrsj9f-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="project-card">
+            <img src="./swiggy.png" alt="swiggy App" class="project-image">
+            View Project
+        </a>
+
+        <a href="https://www.figma.com/proto/yedsf8IeHDkLd4FPMMCxUp/Untitled?page-id=0%3A1&node-id=8-85&p=f&viewport=452%2C49%2C0.2&t=cMDYZ7gi01Vc8RYw-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=8%3A85" target="_blank" class="project-card">
+            <img src="./Edulearn (2).png" alt="Edulearn App" class="project-image">
+            View Project
+        </a>
+
+        <!-- <a href="https://your-link-3.com" target="_blank" class="project-card">
+            <img src="project-3.jpg" alt="Landing Page" class="project-image">
+            View Project
+        </a> -->
+
+        <!-- Row 2
+        <a href="https://your-link-4.com" target="_blank" class="project-card">
+            <img src="project-4.jpg" alt="VR Website" class="project-image">
+        </a>
+
+        <a href="https://your-link-5.com" target="_blank" class="project-card">
+            <img src="project-5.jpg" alt="Noki AI Dashboard" class="project-image">
+        </a>
+
+        <a href="https://your-link-6.com" target="_blank" class="project-card">
+            <img src="project-6.jpg" alt="Car Interface" class="project-image">
+        </a> -->
+
+    </div>
+
+    <div class="projects-footer">
+        <a href="https://your-more-projects-link.com" target="_blank" class="more-projects-btn">
+            More Projects
+        </a>
+    </div>
+</section>
+
+
+<main class="wrap" role="main" aria-labelledby="contact-heading">
+
+    <!-- LEFT -->
+    <section class="left" aria-label="intro and contact">
+      <h1 id="contact-heading" class="big-title">let’s do something<br>awesome</h1>
+
+      <div class="contact-list">
+        <!-- Address block -->
+        <div class="contact-item" aria-label="Address">
+          <div class="icon-wrap" aria-hidden="true">
+            <!-- simple map-pin SVG -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"></path>
+              <circle cx="12" cy="10" r="2.5" fill="none"></circle>
+            </svg>
+          </div>
+          <div>
+            <h4>Address</h4>
+            <p>Kancharapalem, Suresh ram nagar<br>Visakhapatnam, Andhara Pradesh, 530008</p>
+          </div>
+        </div>
+
+        <!-- Phone & Email block -->
+        <div class="contact-item" aria-label="Phone and email">
+          <div class="icon-wrap" aria-hidden="true">
+            <!-- phone + mail icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 1.08 4.18 2 2 0 0 1 3 2h3a2 2 0 0 1 2 1.72c.12 1.05.38 2.08.73 3.06a2 2 0 0 1-.45 2.11L7.91 11.09a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.11-.45c.98.35 2.01.61 3.06.73A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4>Phone & Email</h4>
+            <p>+91 7729948609<br>mmuiuxdeveloper@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- decorative green dot aligned visually like screenshot -->
+        <div style="margin-left:64px;">
+          <div class="green-dot" aria-hidden="true"><div class="core"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT: Contact form -->
+    <aside class="right" aria-label="contact form">
+      <form action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="fullname">Full Name*</label>
+          <input id="fullname" name="fullname" type="text" placeholder="" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="email" placeholder="" required>
+        </div>
+
+        <div class="form-row">
+          <label for="mobile">Mobile*</label>
+          <input id="mobile" name="mobile" type="text" placeholder="" required>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Write Project Details*</label>
+          <textarea id="details" name="details" placeholder="" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </aside>
+
+     <div class="projects-footer">
+        <a >
+           Copyright © 2025 Midathana. All rights reserved.
+        </a>
+    </div>
+  </main>
+
+
+
+
+        
+        
+
+</body>
+</html>
